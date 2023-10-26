@@ -21,7 +21,7 @@ def main():
     
     if not os.path.exists('result'):
         os.makedirs('result')
-    filename = input("Enter the name or path of file: ")
+    filename = '/content/Crunchyroll-Account-Checker/log.txt'
     if os.path.isfile(filename):
         src.checker.CrunchyrollChecker.create(filename)
     else:
